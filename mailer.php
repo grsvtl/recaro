@@ -43,7 +43,7 @@ if (isset($_POST['mailType']) && !empty($_POST['mailType'])) {
     require_once './vendor/autoload.php';
 
     $mailSubject .= ' ' . '(' . $host . ')';
-    $recipient = $host == 'recaro-cs.ru' ? 'denis.kamenshik@gmail.com' : 'denis.kamenshik@gmail.com';
+    $recipient = $host == 'recaro-cs.ru' ? 'comanda@ligood.eu' : 'comanda@ligood.eu';
 
     $transport = new Swift_SendmailTransport('/usr/sbin/sendmail -bs');
     $mailer = new Swift_Mailer($transport);
